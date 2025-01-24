@@ -43,7 +43,7 @@ while True:
         plt.show()
         break
     else:
-        cv2.imshow("Security Feed", frame)
+        cv2.imshow("Weapon Detection Cam", frame)
     
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):
