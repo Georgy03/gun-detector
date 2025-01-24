@@ -16,8 +16,8 @@ while True:
         break
     
     frame = imutils.resize(frame, width=500)
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    gun = gun_cascade.detectMultiScale(white, 1.3, 60, minSize=(100, 100))
+    grey = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    gun = gun_cascade.detectMultiScale(grey, 1.3, 60, minSize=(100, 100))
     
     if len(gun) > 0:
         gun_exist = True
